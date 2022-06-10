@@ -35,6 +35,4 @@ curl -s --ftp-ssl --insecure -T "$NOW"_"$HOSTNAME"_CyLR.zip ftp://$Server:$Serve
 cd ./../../
 rm -rf ./Temp_Expinfo_CyLR
 
-printf '[\342\234\224] Récupération terminée.\n' | iconv -f UTF-8
-
 kill -9 $SPIN_ID > /dev/null
